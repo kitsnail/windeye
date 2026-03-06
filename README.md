@@ -36,6 +36,8 @@ Windeye（风眼）
 
 数据存储与检索服务，提供 REST API。
 
+**仓库**：[github.com/kitsnail/insight-hub](https://github.com/kitsnail/insight-hub)
+
 **数据类型**：
 | type | 中文名 | 说明 |
 |------|--------|------|

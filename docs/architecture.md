@@ -186,4 +186,50 @@ AI：创建 Focus { type: "focus", title: "llm-d 发展动态", source_url: "...
 
 ---
 
+## 八、项目结构
+
+### 仓库结构
+
+```
+windeye/                              # 根目录（系统名称）
+├── README.md                         # Windeye 系统入口
+├── docs/                             # 文档（树根）
+│   ├── architecture.md               # 架构哲学思想
+│   └── naming.md                     # 命名体系
+├── skills/                           # OpenClaw Skills（分支）
+│   ├── wind-radar/                   # 风雷达
+│   ├── daily-signal/                 # 每日信号
+│   └── insight/                      # 洞察（待开发）
+└── scripts/                          # 管理脚本
+    ├── sync.sh                       # 同步
+    └── deploy.sh                     # 部署
+```
+
+### 关联仓库
+
+Windeye 采用多仓库架构，核心组件独立维护：
+
+| 组件 | 仓库 | 说明 |
+|------|------|------|
+| **Insight Hub** | [github.com/kitsnail/insight-hub](https://github.com/kitsnail/insight-hub) | 数据层，提供 REST API 和 Web UI |
+
+### 独立组件
+
+以下组件由其他系统管理：
+
+| 组件 | 位置 | 管理方 |
+|------|------|--------|
+| OpenClaw workspace | `/Users/wh/.openclaw/workspace-tech-doc/` | OpenClaw |
+| OpenClaw 配置 | `/Users/wh/.openclaw/openclaw.json` | OpenClaw |
+
+---
+
+## 九、版本历史
+
+| 版本 | 日期 | 说明 |
+|------|------|------|
+| v0.1.0 | 2026-03-06 | 初始版本，确定核心架构和命名体系 |
+
+---
+
 *本文档是 Windeye 系统设计的核心结晶，代表整个系统的哲学思想。*
